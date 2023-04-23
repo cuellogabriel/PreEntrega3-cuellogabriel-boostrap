@@ -1,0 +1,136 @@
+/* VISTA DESKTOP*/
+
+@media (min-width :1024px) {
+    form {
+        position: relative;
+        width: 540px;
+        height: 540px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 15px 25px;
+        box-sizing: border-box;
+        margin-top: 25px;
+        border-radius: 7px;
+        border-radius: 20px;
+        bottom: 8px;
+        left: 500px;
+      }
+      
+      .contacto {
+        color: rgb(0, 238, 255);
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      
+      input, textarea {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+        border-radius: 20px;
+      }
+      
+      textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+      
+      #boton {
+        background: rgba(0, 0, 0, 0.2);
+        color: rgb(0, 238, 255);
+        padding: 30px;
+        border-radius: 50px;
+      }
+      
+      #boton:hover {
+        cursor: $pointer;
+        background-color: rgb(35, 0, 189);
+        transition: all 0.4s ease 0s;
+      }
+      
+      iframe {
+        position: relative;
+        bottom: 550px;
+        width: 540px;
+        height: 540px;
+        left: 150px;
+        border-radius: 20px;
+        border-color: aqua;
+        background: none;
+      }
+      
+}
+
+/* VISTA MOBILE*/
+
+@media (max-width:768px){
+  body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  main {
+    display: grid;
+    grid-template-areas: "iframe" "form";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 50px;
+  }
+  form {
+    position: static;
+    width: 300px;
+    height: 530px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 7px;
+    border-radius: 20px;
+    bottom: 8px;
+  }
+  .contacto {
+    color: rgb(0, 238, 255);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  #boton {
+    background: rgba(0, 0, 0, 0.2);
+    color: rgb(0, 238, 255);
+    padding: 30px;
+    border-radius: 50px;
+  }
+  iframe {
+    position: static;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    border-color: aqua;
+    background: none;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,106 @@
+/* VISTA DESKTOP*/
+
+@media (min-width :1024px) {
+     /*LOGO - BOTTON  Y NAV DE TODAS LAS PAGES*/
+  
+  .logo {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color : #e0ac1c;
+    cursor: $pointer;
+    border-radius: 50px;
+  }
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 30px;
+    color: transparent;
+  }
+  a {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: $pointer;
+    color: #e0ac1c;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  /*BUTTON + HOVER*/
+  button {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: $pointer;
+    color: none;
+  }
+  button {
+    border: 3px solid color red;
+    border-radius: 50px;
+    padding: 9px 25px;
+  }
+  nav li a :hover {
+    color: rgb(18, 161, 142);
+    transition: all 0.4s ease 0s;
+  }
+  button:hover {
+    background-color: rgb(18, 161, 142);
+    transition: all 0.4s ease 0s;
+  }
+  a:hover {
+    background-color: rgb(18, 161, 142);
+    transition: all 0.4s ease 0s;
+  }
+}
+
+/* VISTA MOBILE*/
+
+@media (max-width:768px){
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    color: transparent;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: $pointer;
+    color: #e0ac1c;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: none;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #e0ac1c;
+    border-radius: 50px;
+    margin-top: 25px;
+  }
+  button {
+    font-size: 20px;
+    font-weight: 500;
+    color: none;
+    position: relative;
+    right: 15px;
+    border: 3px solid color red;
+    border-radius: 50px;
+    padding: 9px 20px;
+  }
+}

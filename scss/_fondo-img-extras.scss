@@ -1,0 +1,108 @@
+/* VISTA DESKTOP*/
+
+@media (min-width :1024px) {
+     
+  video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+  .what {
+    transition: bottom 0.3s;
+    flex: fixed;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 40px;
+    background-image: url(../pictures/whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #555;
+    z-index: 100;
+    cursor: $pointer;
+    transition: all 0.3s ease;
+    background-color: #129809;
+    border-radius: 100%;
+  }
+
+  
+
+}
+
+/* VISTA MOBILE*/
+
+@media (max-width:768px){
+  video {
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .what {
+    transition: bottom 0.3s;
+    flex: fixed;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 35px;
+    background-image: url(../pictures/whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #555;
+    z-index: 100;
+    cursor: $pointer;
+    transition: all 0.3s ease;
+    background-color: #129809;
+    border-radius: 100%;
+  }
+
+  /*devido a una falla en el codigo que no logro encontrar se corrigio de esta manera para poder meterlo dentro de la vista mobile*/
+  .link-what {
+    transition: bottom 0.3s;
+    flex: fixed;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 60px;
+    background-image: url(../pictures/whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #555;
+    z-index: 100;
+    cursor: $pointer;
+    transition: all 0.3s ease;
+    background-color: #129809;
+    border-radius: 100%;
+  }
+}
