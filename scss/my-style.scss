@@ -1,4 +1,4 @@
-/* VISTA DESKTOP*/
+
 
 @media (min-width :1024px) {
      
@@ -12,7 +12,6 @@
       z-index: -1;
     }
 }
-
 
 
 .navbar {
@@ -314,6 +313,44 @@
   -webkit-transform: rotate(360deg);
  }
 
+ $gradient: linear-gradient(to bottom, #6699cc, #66cccc);
+
+
+.tarjetitas {
+background-image: $gradient; 
+color: linear-gradient(to bottom, #6699cc, #66cccc); 
+text-align: center; 
+border: none; 
+cursor: pointer;
+}
+
+.card-efecto{
+  opacity: 0.4;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+.tecno {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tegnology{
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+.bienvenidos{
+  padding: 30px;
+}
 }
 /* VISTA MOBILE*/
 
@@ -507,21 +544,20 @@ footer {
   }
 
   span {
-    color: #fff; /* Color blanco */
-  }
+    color: #fff; 
 
 }
 
 
   video {
     position: fixed;
-    overflow: hidden;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
     min-width: 100%;
     min-height: 100%;
     top: 50%;
     left: 50%;
+    overflow: hidden;
   }
 
   .imagen-de-noticia{
@@ -551,7 +587,6 @@ footer {
   padding: 10px;
   margin: 10px;
 }
-
 
 
 .tarjetas-section {
@@ -588,11 +623,52 @@ footer {
       margin: 10px;
     }
   }
+
+}
 }
 .tarjeta{
 border: 1px solid white;
 height: 100%;
 
-
 }
+
+$gradient: linear-gradient(to bottom, #6699cc, #66cccc);
+
+
+.tarjetitas {
+background-image: $gradient; 
+color: linear-gradient(to bottom, #6699cc, #66cccc); 
+text-align: center; 
+border: none; 
+cursor: pointer;
+}
+
+.card-efecto{
+  opacity: 0.4;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+.tecno {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tegnology{
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+.bienvenidos{
+  padding: 30px;
+}
+
 }
