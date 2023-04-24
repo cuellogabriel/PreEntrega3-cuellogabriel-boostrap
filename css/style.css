@@ -6790,6 +6790,46 @@ textarea.form-control-lg {
     padding: 5px;
     margin: 5px;
   }
+  .tarjetas-section {
+    background: linear-gradient(to right, green, red, black);
+    margin: 10px;
+  }
+  .tarjetas-section .card {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 444px;
+    margin-bottom: 20px;
+  }
+  .tarjetas-section .card .numero {
+    display: block;
+    margin: 0 auto;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0.4;
+    font-weight: bold;
+  }
+  .tarjetas-section .card p {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+  }
+  .tarjetas-section .card button {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    text-shadow: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    left: 115px;
+  }
+  .tarjeta {
+    border: 1px solid white;
+    height: 100%;
+  }
 }
 /* VISTA MOBILE*/
 @media (max-width: 768px) {
