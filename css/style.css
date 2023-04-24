@@ -6566,6 +6566,14 @@ textarea.form-control-lg {
 .navbar .navbar-brand {
   font-size: 20px;
   color: #fff;
+  animation: spin 2s linear infinite;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .navbar .navbar-nav li {
   display: inline-block;
@@ -6578,6 +6586,9 @@ textarea.form-control-lg {
 
 /* VISTA DESKTOP*/
 @media (min-width: 1024px) {
+  .navbar a:hover {
+    background-color: #3F71EA;
+  }
   footer {
     position: relative;
     bottom: 0;
@@ -6609,6 +6620,21 @@ textarea.form-control-lg {
   }
   .footer-distributed .footer-left {
     width: 30%;
+  }
+  .logo2 {
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+  }
+  .wow:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, #FFD700, #FF8C00, #E91E63);
+    animation: movimiento 10s linear infinite;
   }
   .footer-distributed h3, .footer-distributed .h3 {
     color: #e0ac1c;
@@ -6761,6 +6787,8 @@ textarea.form-control-lg {
   }
   .titulo-imagen {
     color: #e0ac1c;
+    align-items: center;
+    text-align: center;
   }
   .full-stack {
     width: 700px;
@@ -7069,6 +7097,7 @@ textarea.form-control-lg {
     min-height: 100%;
     top: 50%;
     left: 50%;
+    object-fit: contain;
     overflow: hidden;
   }
   .imagen-de-noticia {
