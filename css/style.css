@@ -6549,6 +6549,11 @@ textarea.form-control-lg {
     mask-position: -200% 0%;
   }
 }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 1024px) {
   video {
     position: fixed;
@@ -6566,14 +6571,8 @@ textarea.form-control-lg {
 .navbar .navbar-brand {
   font-size: 20px;
   color: #fff;
-  animation: spin 2s linear infinite;
-  animation-iteration-count: 3;
+  animation: spin 2s linear infinite 3;
   animation-fill-mode: forwards;
-}
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .navbar .navbar-nav li {
   display: inline-block;
@@ -6582,9 +6581,7 @@ textarea.form-control-lg {
   font-size: 20px;
   color: #fff;
   padding: 0 20px;
-}
-
-/* VISTA DESKTOP*/
+} /*VISTA DESKTOP*/
 @media (min-width: 1024px) {
   .navbar a:hover {
     background-color: #3F71EA;
@@ -6625,16 +6622,6 @@ textarea.form-control-lg {
     position: relative;
     top: 100px;
     cursor: pointer;
-  }
-  .wow:before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(to right, #FFD700, #FF8C00, #E91E63);
-    animation: movimiento 10s linear infinite;
   }
   .footer-distributed h3, .footer-distributed .h3 {
     color: #e0ac1c;
@@ -6842,7 +6829,7 @@ textarea.form-control-lg {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 10px;
   }
-  .tarjetas-section .card button {
+  .tarjetas-section .card .boton {
     background-color: rgba(255, 255, 255, 0.8);
     color: white;
     text-shadow: none;
@@ -6899,15 +6886,15 @@ textarea.form-control-lg {
   }
 }
 /* VISTA MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    position: relative;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
+    position: relative;
+    bottom: 0;
   }
   .footer-distributed {
     box-sizing: border-box;
@@ -6915,8 +6902,8 @@ textarea.form-control-lg {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;
     background: rgba(0, 0, 0, 0.4);
+    margin-top: 80px;
   }
   .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
     display: inline-block;
@@ -7025,7 +7012,7 @@ textarea.form-control-lg {
     background-color: white;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) and (max-width: 800px) {
+@media (max-width: 780px) and (max-width: 768px) and (max-width: 800px) {
   .footer-distributed {
     width: 100%;
   }
@@ -7039,7 +7026,7 @@ textarea.form-control-lg {
     margin-left: 0;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 780px) and (max-width: 768px) {
   .social {
     position: relative;
     top: 20px;
@@ -7053,10 +7040,9 @@ textarea.form-control-lg {
     bottom: 9px;
     color: white;
   }
-  .email {
+  .email-link {
     position: relative;
-    right: 205px;
-    top: 82px;
+    top: 20px;
     color: white;
   }
   .position {
@@ -7088,17 +7074,6 @@ textarea.form-control-lg {
   }
   span {
     color: #fff;
-  }
-  video {
-    position: fixed;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    object-fit: contain;
-    overflow: hidden;
   }
   .imagen-de-noticia {
     width: 100%;
@@ -7152,7 +7127,7 @@ textarea.form-control-lg {
     margin: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .tarjeta {
     border: 1px solid white;
     height: 100%;
@@ -7187,6 +7162,17 @@ textarea.form-control-lg {
   }
   .bienvenidos {
     padding: 30px;
+  }
+  video {
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
   }
 }
 .clearfix::after {
