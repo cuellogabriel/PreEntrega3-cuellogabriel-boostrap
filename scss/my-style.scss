@@ -1,7 +1,13 @@
 
 @import "mixing-propio";
 @media (min-width :1024px) {
-     
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
     video {
       position: fixed;
       min-width: 100%;
@@ -11,11 +17,11 @@
       transform: translateX(-50%) translateY(-50%);
       z-index: -1;
     }
-}
+  }
+    
 .navbar {
   @include navbar-style;
 }
-
 
  /*VISTA DESKTOP*/
 
@@ -341,6 +347,7 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
+  max-width: 100%;
 }
 .footer-distributed {
   box-sizing: border-box;
@@ -528,17 +535,19 @@ footer {
 
   .imagen-de-noticia{
     width: 100%;
-    border-radius: 20px;
-    margin: 0;
-    padding: 0;
+    border-radius: 10px;
+    margin: 5;
+    padding: 5;
   }
 
   .texto-lorem{
     color: white;
+    text-align: center;
   }
 
   .titulo-imagen{
     color: #e0ac1c;
+    text-align: center;
   }
   
   .full-stack{
@@ -552,8 +561,11 @@ footer {
  .contenedor-imagen{
   padding: 10px;
   margin: 10px;
+  overflow-x: hidden;
 }
-
+.container´{
+  right: 10px;
+}
 
 .tarjetas-section {
   background: linear-gradient(to right, green, red, black);
@@ -637,8 +649,9 @@ cursor: pointer;
   padding: 30px;
 }
 video {
+  background-size: cover;
   position: fixed;
-  overflow: hidden;
+  overflow-x: hidden;
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
   min-width: 100%;
@@ -648,6 +661,5 @@ video {
   object-fit: contain;
   
 }
-
-
 }
+
