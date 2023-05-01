@@ -564,7 +564,8 @@ footer {
   overflow-x: hidden;
 }
 .container´{
-  right: 10px;
+  display: grid;
+  background-position: center;
 }
 
 .tarjetas-section {
@@ -661,5 +662,11 @@ video {
   object-fit: contain;
   
 }
+
+
+
+
+
+
 }
 

@@ -7111,7 +7111,8 @@ textarea.form-control-lg {
     overflow-x: hidden;
   }
   .container´ {
-    right: 10px;
+    display: grid;
+    background-position: center;
   }
   .tarjetas-section {
     background: linear-gradient(to right, green, red, black);
