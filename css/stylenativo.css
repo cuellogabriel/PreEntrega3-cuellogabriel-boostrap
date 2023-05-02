@@ -1,0 +1,829 @@
+@media (min-width: 1024px) {
+    body {
+      background-image: url(pictures-20230305_224720.mp4);
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      box-sizing: border-box;
+    }
+    body {
+      background: url(pictures/logo2.jpg) no-repeat;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    header {
+      width: 100%;
+      height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background: rgb(0, 0, 0);
+      background: none;
+    }
+  }
+
+  /* VISTA MOBILE*/
+@media (max-width: 768px) {
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      display: flex;
+      position: auto;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }
+  }
+  /* VISTA DESKTOP*/
+  @media (min-width: 1024px) {
+    /*LOGO - BOTTON  Y NAV DE TODAS LAS PAGES*/
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      color: #e0ac1c;
+      cursor: cursor pointer;
+      border-radius: 50px;
+    }
+    nav li {
+      display: inline-block;
+      list-style: none;
+      padding: 0px 30px;
+      color: transparent;
+    }
+    a {
+      font-size: 25px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: cursor pointer;
+      color: #e0ac1c;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+    /*BUTTON + HOVER*/
+    button {
+      font-size: 20px;
+      font-weight: 600;
+      cursor: cursor pointer;
+      color: none;
+    }
+    button {
+      border: 3px solid color red;
+      border-radius: 50px;
+      padding: 9px 25px;
+    }
+    nav li a :hover {
+      color: rgb(18, 161, 142);
+      transition: all 0.4s ease 0s;
+    }
+    button:hover {
+      background-color: rgb(18, 161, 142);
+      transition: all 0.4s ease 0s;
+    }
+    a:hover {
+      background-color: rgb(18, 161, 142);
+      transition: all 0.4s ease 0s;
+    }
+  }
+  /* VISTA MOBILE*/
+  @media (max-width: 768px) {
+    nav li {
+      display: inline-block;
+      list-style: none;
+      padding: 0px 20px;
+      color: transparent;
+    }
+    nav {
+      display: flex;
+      position: relative;
+      top: 25px;
+      left: 10px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: cursor pointer;
+      color: #e0ac1c;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+    header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      background: none;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      color: #e0ac1c;
+      border-radius: 50px;
+      margin-top: 25px;
+    }
+    button {
+      font-size: 20px;
+      font-weight: 500;
+      color: none;
+      position: relative;
+      right: 15px;
+      border: 3px solid color red;
+      border-radius: 50px;
+      padding: 9px 20px;
+    }
+  }
+  /* VISTA DESKTOP*/
+  @media (min-width: 1024px) {
+    video {
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+    }
+    .what {
+      transition: bottom 0.3s;
+      flex: fixed;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      bottom: 60px;
+      right: 40px;
+      background-image: url(../pictures/whatsapp.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 0 10px 0 #555;
+      z-index: 100;
+      cursor: cursor pointer;
+      transition: all 0.3s ease;
+      background-color: #129809;
+      border-radius: 100%;
+    }
+  }
+  /* VISTA MOBILE*/
+  @media (max-width: 768px) {
+    video {
+      position: fixed;
+      overflow: hidden;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+    }
+    .what {
+      transition: bottom 0.3s;
+      flex: fixed;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      bottom: 50px;
+      right: 35px;
+      background-image: url(../pictures/whatsapp.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 0 10px 0 #555;
+      z-index: 100;
+      cursor: cursor pointer;
+      transition: all 0.3s ease;
+      background-color: #129809;
+      border-radius: 100%;
+    }
+}
+
+/* VISTA DESKTOP*/
+@media (min-width: 1024px) {
+    footer {
+      position: relative;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      position: fixed;
+    }
+    .footer-tecnologia {
+      position: static;
+    }
+  }
+  @media (min-width: 1024px) and (min-width: 1024px) and (max-height: 800px) {
+    footer {
+      position: static;
+    }
+  }
+  @media (min-width: 1024px) {
+    .footer-distributed {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 50px 50px 60px 50px;
+      margin-top: 80px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .footer-distributed .footer-left {
+      width: 30%;
+    }
+    .footer-distributed h3 {
+      color: color #ffffff;
+      font: normal 36px "Cookie", cursive;
+      margin: 0;
+    }
+    .footer-distributed h3 span {
+      color: #e0ac1c;
+    }
+    .footer-distributed .footer-links {
+      color: color #ffffff;
+      margin: 20px 0 12px;
+    }
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+    }
+    .footer-distributed .footer-company-name {
+      color: color #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+    .footer-distributed .footer-center {
+      width: 35%;
+    }
+    .footer-distributed .footer-center i {
+      background-color: #33383b;
+      color: color #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+    }
+    .footer-distributed .footer-center p {
+      display: inline-block;
+      color: color #ffffff;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 2;
+    }
+    .footer-distributed .footer-center p a {
+      color: color #e0ac1c;
+      text-decoration: none;
+    }
+    .footer-distributed .footer-right {
+      width: 30%;
+    }
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: color #ffffff;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+    }
+    .footer-distributed .footer-company-about span {
+      display: block;
+      color: color #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .footer-distributed .footer-icons {
+      margin-top: 25px;
+    }
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: cursor pointer;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: color #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+    .footer-distributed .footer-icons a:hover {
+      background-color: #3F71EA;
+    }
+  }
+  @media (min-width: 1024px) and (min-width: 1024px) and (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    .social {
+      position: relative;
+      top: 1px;
+      right: 100px;
+    }
+    .phone {
+      position: relative;
+      right: 600px;
+      bottom: 19px;
+      width: 50px;
+      height: 50px;
+    }
+    .email {
+      position: relative;
+      right: 520px;
+    }
+    .position {
+      position: relative;
+      top: 15px;
+    }
+    img {
+      border-radius: 1500px;
+      width: 80px;
+      height: 80px;
+      float: right;
+      padding: 10px;
+    }
+  }
+  /* VISTA MOBILE*/
+  @media (max-width: 768px) {
+    footer {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      position: relative;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+    .footer-distributed {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 50px 50px 60px 50px;
+      margin-top: 80px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+    /* FOOTER LEFT (MOBILE)*/
+    .footer-distributed .footer-left {
+      width: 30%;
+    }
+    .footer-distributed h3 {
+      color: color #ffffff;
+      font: normal 36px "Cookie", cursive;
+      margin: 0;
+    }
+    .footer-distributed h3 span {
+      color: #e0ac1c;
+    }
+    /* FOOTER LINKS (MOBILE)*/
+    .footer-distributed .footer-links {
+      color: color #ffffff;
+      margin: 20px 0 12px;
+    }
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+    }
+    .footer-distributed .footer-company-name {
+      color: color #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+    /* FOOTER CENTER (MOBILE) */
+    .footer-distributed .footer-center {
+      width: 35%;
+    }
+    .footer-distributed .footer-center i {
+      background-color: #33383b;
+      color: color #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+    }
+    .footer-distributed .footer-center p {
+      display: inline-block;
+      color: color #ffffff;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 2;
+    }
+    .footer-distributed .footer-center p a {
+      color: color #e0ac1c;
+      text-decoration: none;
+    }
+    .footer-distributed .footer-right {
+      width: 30%;
+    }
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: color #ffffff;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+    }
+    .footer-distributed .footer-company-about span {
+      display: flex;
+      color: color #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .footer-distributed .footer-icons {
+      margin-top: 25px;
+    }
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: cursor pointer;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: color #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+    .footer-distributed .footer-icons a:hover {
+      background-color: #3F71EA;
+    }
+  }
+  @media (max-width: 768px) and (max-width: 768px) and (max-width: 800px) {
+    .footer-distributed {
+      width: 100%;
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 768px) and (max-width: 768px) {
+    .social {
+      position: relative;
+      top: 10px;
+      right: 70px;
+    }
+    .phone {
+      position: relative;
+      right: 250px;
+      width: 50px;
+      height: 50px;
+      bottom: 9px;
+    }
+    .email {
+      position: relative;
+      right: 205px;
+      top: 52px;
+    }
+    .position {
+      position: relative;
+      top: 15px;
+      left: 25px;
+    }
+    img {
+      border-radius: 1500px;
+      width: 60px;
+      height: 60px;
+      float: right;
+      padding: 10px;
+    }
+    .twetter1 {
+      position: relative;
+      left: 60px;
+      bottom: 60px;
+    }
+  }
+
+  /* VISTA DESKTOP*/
+@media (min-width: 1024px) {
+    .padre {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      display: grid;
+      justify-content: center;
+      min-height: auto;
+      background: rgba(0, 0, 0, 0.2);
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      position: relative;
+      top: 60px;
+    }
+    .container {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    .container .box {
+      position: relative;
+      background: #ffffff;
+      padding: 20px 40px 40px;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .container .box h2 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 100px;
+      color: #ffffff;
+      z-index: 1;
+      opacity: 0.4;
+    }
+    .container .box h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    .container .box h3 {
+      margin: 10px;
+      padding: 0;
+      color: #ffffff;
+      font-size: 28px;
+    }
+    .box:hover {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      box-shadow: 0px 0px 15px 15px #ec731e;
+      -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+
+    .numero{
+        color: white;
+    }
+
+   p{
+    color: white;
+   }
+  }
+  /* VISTA MOBILE*/
+  @media (max-width: 768px) {
+    .padre {
+      margin: 30px;
+      padding: 60;
+      display: flex;
+      display: grid;
+      justify-content: center;
+      min-height: auto;
+      background: rgba(0, 0, 0, 0.2);
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    .container {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    .container .box {
+      position: relative;
+      background: #ffffff;
+      padding: 20px 40px 40px;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .container .box h2 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 80px;
+      color: #ffffff;
+      z-index: 1;
+      opacity: 0.4;
+    }
+    .container .box h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .container .box h3 {
+      margin: 10px;
+      padding: 0;
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .numero{
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+  }
+
+  /* VISTA DESKTOP*/
+@media (min-width: 1024px) {
+    form {
+      position: relative;
+      width: 540px;
+      height: 540px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px 25px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      border-radius: 7px;
+      border-radius: 20px;
+      bottom: 8px;
+      left: 500px;
+    }
+    .contacto {
+      color: rgb(0, 238, 255);
+      text-align: center;
+      margin: 0;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 17px;
+      border: none;
+      border-radius: 20px;
+    }
+    textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+    #boton {
+      background: rgba(0, 0, 0, 0.2);
+      color: rgb(0, 238, 255);
+      padding: 30px;
+      border-radius: 50px;
+    }
+    #boton:hover {
+      cursor: cursor pointer;
+      background-color: rgb(35, 0, 189);
+      transition: all 0.4s ease 0s;
+    }
+    iframe {
+      position: relative;
+      bottom: 550px;
+      width: 540px;
+      height: 540px;
+      left: 150px;
+      border-radius: 20px;
+      border-color: aqua;
+      background: none;
+    }
+  }
+  /* VISTA MOBILE*/
+  @media (max-width: 768px) {
+    body {
+      display: grid;
+      grid-template-areas: "header" "main" "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+    main {
+      display: grid;
+      grid-template-areas: "iframe" "form";
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      padding: 50px;
+    }
+    form {
+      position: static;
+      width: 300px;
+      height: 530px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      border-radius: 7px;
+      border-radius: 20px;
+      bottom: 8px;
+    }
+    .contacto {
+      color: rgb(0, 238, 255);
+      text-align: center;
+      margin: 0;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 17px;
+      border: none;
+      border-radius: 20px;
+    }
+    textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+    #boton {
+      background: rgba(0, 0, 0, 0.2);
+      color: rgb(0, 238, 255);
+      padding: 30px;
+      border-radius: 50px;
+    }
+    iframe {
+      position: static;
+      width: 300px;
+      height: 300px;
+      border-radius: 20%;
+      border-color: aqua;
+      background: none;
+      padding: 20px;
+    }
+  }
