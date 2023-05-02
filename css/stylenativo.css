@@ -223,7 +223,7 @@
 /* VISTA DESKTOP*/
 @media (min-width: 1024px) {
     footer {
-      position: relative;
+      display: flex;
       bottom: 0;
       background: rgba(0, 0, 0, 0.4);
       position: fixed;
@@ -703,10 +703,20 @@
 
   /* VISTA DESKTOP*/
 @media (min-width: 1024px) {
+
+    .contactanos{
+    display: grid;
+    grid-template-areas: 
+    "form"
+    "contacto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    }
+
     form {
-      position: relative;
+     
       width: 540px;
-      height: 540px;
+      height: 500px;
       margin: auto;
       background: rgba(0, 0, 0, 0.4);
       padding: 15px 25px;
@@ -714,8 +724,7 @@
       margin-top: 25px;
       border-radius: 7px;
       border-radius: 20px;
-      bottom: 8px;
-      left: 500px;
+     
     }
     .contacto {
       color: rgb(0, 238, 255);
@@ -751,14 +760,14 @@
       transition: all 0.4s ease 0s;
     }
     iframe {
-      position: relative;
-      bottom: 550px;
+      
       width: 540px;
-      height: 540px;
-      left: 150px;
+      height: 500px;
+      margin:auto;
       border-radius: 20px;
       border-color: aqua;
       background: none;
+      margin-top: 25px;
     }
   }
   /* VISTA MOBILE*/
