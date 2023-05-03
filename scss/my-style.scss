@@ -216,7 +216,22 @@
     .imagen-de-noticia{
       @include imagenes-not;
     }
-
+    
+    .noticias-container .noticia {
+      animation: cascade 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes cascade {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
     .texto-lorem{
       color: white;
     }
@@ -628,10 +643,6 @@ cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
   display: inline-block;
 }
-
-
-
-
 
 .tecno {
   border: 1px solid #ccc;
