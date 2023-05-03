@@ -7161,6 +7161,7 @@ textarea.form-control-lg {
     opacity: 0.4;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
   }
   .tecno {
     border: 1px solid #ccc;

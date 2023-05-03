@@ -622,11 +622,17 @@ border: none;
 cursor: pointer;
 }
 
-.card-efecto{
+.card-efecto {
   opacity: 0.4;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
 }
+
+
+
+
+
 .tecno {
   border: 1px solid #ccc;
   border-radius: 4px;
