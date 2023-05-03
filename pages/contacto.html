@@ -24,9 +24,9 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="./noticias.html">Noticias</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./tecnologia.html">Tecnologia</a></li>
           <li><a href="#">Contacto</a></li>
+          <li><a href="./tecnologia.html">Tecnologia</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
         </ul>
       </nav>
       <button><a href ="./quieneSomos.html">Quiénes somos</a></button>
@@ -100,8 +100,46 @@
         <a href="https://api.whatsapp.com/send/?phone=542324342375" target="_blank" ><img src="../img/whatsap1.png" alt=""></a>
       </div>
    </footer>
+   <script >
+// Seleccionamos el iframe y obtenemos su posición final
+const iframe = document.querySelector('iframe');
+const iframeFinalPos = iframe.getBoundingClientRect();
 
-      
-   
+// Creamos un div que servirá como copia del iframe para la animación
+const iframeCopy = document.createElement('div');
+iframeCopy.style.position = 'absolute';
+iframeCopy.style.top = '0';
+iframeCopy.style.left = '0';
+iframeCopy.style.width = `${iframe.offsetWidth}px`;
+iframeCopy.style.height = `${iframe.offsetHeight}px`;
+iframeCopy.style.background = 'rgba(0, 0, 0, 0.4)';
+iframeCopy.style.padding = '15px 25px';
+iframeCopy.style.boxSizing = 'border-box';
+iframeCopy.style.borderRadius = '7px';
+iframeCopy.style.borderRadius = '20px';
+iframeCopy.style.zIndex = '9999';
 
+// Agregamos el div al body de la página
+document.body.appendChild(iframeCopy);
+
+// Ocultamos el iframe original
+iframe.style.display = 'none';
+
+// Animamos la copia del iframe hasta su posición final
+const animation = iframeCopy.animate([
+  { transform: `translate(${window.innerWidth/2 - iframe.offsetWidth/2}px, -${iframe.offsetHeight}px)` },
+  { transform: `translate(${iframeFinalPos.left}px, ${iframeFinalPos.top}px)` }
+], {
+  duration: 1000,
+  easing: 'ease-out',
+  fill: 'forwards'
+});
+
+// Cuando termina la animación, eliminamos la copia y mostramos el iframe original
+animation.onfinish = () => {
+  iframeCopy.parentNode.removeChild(iframeCopy);
+  iframe.style.display = 'block';
+};
+   </script>
+</body>
 </html>
